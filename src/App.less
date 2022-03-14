@@ -1,0 +1,48 @@
+@import (reference) '@/mixins.less';
+
+body,html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  background-color: #f7f7f7;
+}
+
+:root {
+  // 主题色
+  --primary-color: #1677fe;
+  --primary-light: fade(#1677fe, 10%);
+  --primary-lighter: fade(#1677fe, 5%);
+  --primary-dark: darken(#1677fe, 5%);
+  --link-color: var(--primary-color);
+  --error-color: #ee3e3e;
+  --text-color: #333;
+  --text-light: #666;
+  --text-disabled: #999;
+  --price-color: #ff4d4f;
+  --bd-color: #ccc;
+  --bg-color: #f4f4f4;
+
+  // 自定义滚动条
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 1em;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 1em;
+  }
+  ::-webkit-scrollbar-corner {
+    background-color: #fff;
+  }
+
+  ::placeholder {
+    color: #c5c5c5;
+  }
+}
